@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ankitsharma.mymall">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/my_mall"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/my_mall"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyMall">
+        <activity
+            android:name=".activity.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ShowAllActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DetailedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.OnBoardingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.RegistrationActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
